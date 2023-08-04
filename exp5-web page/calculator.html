@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    Number-1:<input type="number" id="a" placeholder="Enter the number"><br>
+    Number-2:<input type="number" id="b" placeholder="Enter the number"><br><br>
+    <button type="button" value="+"  onclick="sum()">
+    <input type="button" value="-" id="q" onclick="diff()">
+    <input type="button" value="*" id="r" onclick=" mul()">
+    <input type="button" value="/" id="s" onclick="div()"><br><br>
+   
+    <input type="Button" value="Reset">
+    <script>
+        function sum()
+        {
+            var num1=document.getElementById(a).value;
+            var num2=document.getElementById(b).value;
+            var result=parseInt(num1)+parseInt(num2);
+            alert(result);
+        }
+        function diff()
+        {
+
+        }
+        function mul()
+        {
+
+        }
+        function div()
+        {
+
+        }
+    </script>
+</body>
+</html>
