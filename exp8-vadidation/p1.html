@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    Name:  <input id="a" type="text" placeholder="please enter name" oninput="validation()"><br>
+    <span style="color: red;" id="error1"></span>
+    
+    <script>
+        function validation() {
+            var name = document.getElementById("a").value;
+            var error1 = document.getElementById("error1");
+            
+            if(name[0]>='A' && name[0]<='Z')
+            {
+                if (name.length < 4) {
+                error1.innerHTML = "Enter a valid length";
+            } else {
+                error1.innerHTML = "";
+            }
+            }
+            else
+                error1.innerHTML = "First character should be captial";
+
+        }
+    </script>
+</body>
+</html>
